@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+body {
+  position: relative;
+  margin: 0;
+  height: 100vh;
+}
+
+body::before {
+  background-image: url("../../public/background-img.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: "";
+  filter: saturate(2);
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: -1;
+}

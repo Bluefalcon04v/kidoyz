@@ -1,5 +1,8 @@
+import Navbar from "@/components/navbar";
 import type { Metadata } from "next";
-import "./style/globals.css";
+import "@/style/globals.css";
+import "@/style/_fonts.css";
+import "@/style/_colors.css";
 
 export const metadata: Metadata = {
   title: "Kidoys",
@@ -13,10 +16,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`antialiased`}
-      >
-        {children}
+      <body className="w-full">
+        <Navbar />
+        <div>{children}</div>
       </body>
     </html>
   );
