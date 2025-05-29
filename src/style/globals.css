@@ -7,7 +7,7 @@ body {
 }
 
 body::before {
-  background-image: url("../../public/background-img.png");
+  background-image: url("../../public/images/background-img.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -19,4 +19,21 @@ body::before {
   top: 0;
   width: 100vw;
   z-index: -1;
+}
+
+@layer components {
+  .container {
+    width: 100%;
+    max-width: 1450px;
+    margin: 0 auto;
+    padding: 0 4rem;
+  }
+}
+
+/* ------------------------ Input Style -------------------------- */
+input[type="search"] {
+  background-image: url("../../public/svg/nav/search.svg");
+  background-position: right 10px center;
+  background-repeat: no-repeat;
+  padding: 8px 40px px 14px;
 }

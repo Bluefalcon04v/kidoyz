@@ -18,8 +18,9 @@ export default function RootLayout({
     <html lang="en">
       <body className="w-full">
         <Navbar />
-        <div>{children}</div>
+        <div className="container">{children}</div>
       </body>
     </html>
   );
 }
+  
