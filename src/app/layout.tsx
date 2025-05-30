@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import "@/style/globals.css";
 import "@/style/_fonts.css";
 import "@/style/_colors.css";
+import "@/style/_html.css";
 
 export const metadata: Metadata = {
   title: "Kidoys",

@@ -1,0 +1,9 @@
+
+/* ------------------------ Input Seach Styling -------------------------- */
+input[type="search"] {
+  background-image: url("../../public/svg/search.svg");
+  background-position: right 10px center;
+  background-repeat: no-repeat;
+  padding: 8px 40px 8px 14px;
+  cursor: pointer;
+}

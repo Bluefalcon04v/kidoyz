@@ -1,5 +1,6 @@
+import { HeartIcon, ProfileIcon, ShoppingCartIcon } from "@/public/svg/index";
 import { Logo } from "@/public/images/index";
-import { ProfileIcon } from "@/public/svg/index";
+import ButtonCustom from "@/custom/button";
 import Image from "next/image";
 import React from "react";
 
@@ -14,15 +15,19 @@ const Navbar = () => {
         quality={100}
         className="aspect-video w-28"
       />
-      <div className="flex h-fit gap-4">
+      <div className="flex h-fit gap-5 justify-center items-center">
         <input
           type="search"
           name="search"
-          className="outline-2 outline-gray-color focus:outline-primary font-dm-sans text-sm px-2 w-80 py-2 rounded-sm "
+          className="outline-2 outline-gray focus:outline-primary font-dm-sans text-sm px-2 w-80 py-2 rounded-sm"
           placeholder="Search the store"
         />
-
-        <Image src={ProfileIcon} alt="profile" />
+        <div className="flex gap-4 items-center">
+          <ProfileIcon />
+          <HeartIcon />
+          <ShoppingCartIcon />
+        </div>
+        <ButtonCustom text="Login"/>
       </div>
     </nav>
   );

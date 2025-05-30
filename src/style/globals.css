@@ -1,3 +1,4 @@
+@import './_colors.css';
 @import "tailwindcss";
 
 body {
@@ -28,12 +29,8 @@ body::before {
     margin: 0 auto;
     padding: 0 4rem;
   }
-}
-
-/* ------------------------ Input Style -------------------------- */
-input[type="search"] {
-  background-image: url("../../public/svg/nav/search.svg");
-  background-position: right 10px center;
-  background-repeat: no-repeat;
-  padding: 8px 40px px 14px;
+  
+  .svg-style {
+    @apply fill-black hover:fill-primary cursor-pointer transition-all ease-in-out hover:scale-110;
+  }
 }

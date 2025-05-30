@@ -2,11 +2,15 @@
 @layer theme, base, components, utilities;
 
 @theme {
-  --color-background: #ffffff;
+  /* Brand Colors */
   --color-primary: #f89c1d;
   --color-secondary: #512600;
-  --color-button-color: #ff7800;
-  --color-darkgray-color: #323232;
-  --color-gray-color: #808080;
+  --color-highlight: #ff7800;
+
+  /* Neutrals */
+  --color-background: #ffffff;
   --color-black: #1c1d1d;
+  --color-dark-gray: #323232;
+  --color-gray: #808080;
+  --color-neutral: #575757;
 }
