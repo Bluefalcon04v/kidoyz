@@ -1,35 +1,42 @@
-"use client";
 import React from "react";
+import { cva } from "class-variance-authority";
 
-interface IProps {
-  onClick?: unknown;
-  text: string;
-  className?: string;
-  disabled?: boolean;
-}
-
-const ButtonCustom: React.FC<IProps> = ({
-  className,
-  disabled,
-  onClick,
-  text,
-  ...props
-}: IProps) => {
-  return (
-    <button
-      type="button"
-      disabled={disabled}
-      onClick={() => onClick}
-      className={`${className}  ${
-        disabled
-          ? "bg-gray-400 text-gray-500 border-gray-300 !cursor-not-allowed opacity-60"
-          : "bg-[#0076CE] text-white border-blue-200 active:bg-active-blue active:scale-95 cursor-pointer"
-      } group relative flex items-center bg-[#0076CE] active:bg-active-blue px-8 py-1 border-2 border-blue-200 rounded-md overflow-hidden font-dm-sans font-semibold text-white text-sm align-middle tracking-wide active:scale-95 transition-all duration-500 cursor-pointer transform`}
-      {...props}
-    >
-      {text}
-    </button>
-  );
+type IButton = React.HTMLAttributes<HTMLButtonElement> & {
+  variant?: "primary" | "secondary" | "disabled";
+  size?: "default" | "sm";
 };
 
-export default ButtonCustom;
+const buttonVariants = cva(
+  "active:scale-95 flex items-center justify-center rounded-sm font-semibold transition-all ease-in-out cursor-pointer hover:shadow-md leading-none tracking-wide text-shadow-sm hover:text-shadow-none",
+  {
+    variants: {
+      variant: {
+        primary: "bg-primary text-white active:bg-highlight font-dm-sans",
+        secondary: "bg-teal text-white font-dm-sans active:saturate-200",
+        disabled: "bg-stone-200 text-stone-400 !text-shadow-none hover:shadow-none !cursor-not-allowed"
+      },
+      size: {
+        default: "px-8 py-2.5",
+        sm: "px-2 py-1 text-sm",
+      },
+    },
+    defaultVariants: {
+      variant: "primary",
+      size: "default",
+    },
+  }
+);
+
+export const Button: React.FC<IButton> = ({
+  className,
+  variant,
+  size,
+  ...props
+}) => {
+  return (
+    <button
+      {...props}
+      className={buttonVariants({ variant, size, className })}
+    />
+  );
+};

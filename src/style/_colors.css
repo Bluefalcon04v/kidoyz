@@ -6,9 +6,10 @@
   --color-primary: #f89c1d;
   --color-secondary: #512600;
   --color-highlight: #ff7800;
+  --color-teal: #006874;
 
   /* Neutrals */
-  --color-background: #ffffff;
+  --color-white: #ffffff;
   --color-black: #1c1d1d;
   --color-dark-gray: #323232;
   --color-gray: #808080;

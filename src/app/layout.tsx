@@ -1,5 +1,6 @@
 import Navbar from "@/components/navbar";
 import type { Metadata } from "next";
+import "@/style/_tailwind.css";
 import "@/style/globals.css";
 import "@/style/_fonts.css";
 import "@/style/_colors.css";

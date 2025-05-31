@@ -22,7 +22,17 @@ body::before {
   z-index: -1;
 }
 
-@layer components {
+/* ------------ ScrollBar Style ------------ */
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: var(--color-primary);
+}
+
+/* @layer components {
   .container {
     width: 100%;
     max-width: 1450px;
@@ -31,6 +41,6 @@ body::before {
   }
   
   .svg-style {
-    @apply fill-black hover:fill-primary cursor-pointer transition-all ease-in-out hover:scale-110;
+    @apply fill-black hover:fill-primary hover:scale-110 transition-all ease-in-out cursor-pointer;
   }
-}
+} */
