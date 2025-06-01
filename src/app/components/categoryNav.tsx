@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const CategoryNav = () => {
   return (
-    <div className="flex justify-between bg-white px-8 py-5">
+    <div className="flex justify-between bg-white shadow-sm px-8 py-5 rounded-md">
       {CATEGORY_ITEMS.map((i, index) => (
         <Link
           href={i.link}

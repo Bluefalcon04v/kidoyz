@@ -1,4 +1,4 @@
-@import './_colors.css';
+@import "./_colors.css";
 @import "tailwindcss";
 
 body {
@@ -30,4 +30,21 @@ body::before {
 *::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background-color: var(--color-primary);
+}
+
+.swiper-pagination
+  .swiper-pagination-clickable
+  .swiper-pagination-bullets
+  .swiper-pagination-horizontal {
+  position: absolute;
+  top: -200px !important;
+}
+
+.swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
+  background-color: transparent !important;
+  border: 2px solid var(--color-primary);
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--color-primary) !important;
 }

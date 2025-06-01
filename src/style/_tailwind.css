@@ -16,4 +16,8 @@
   .svg-secondary-style {
     @apply fill-secondary group-hover:fill-primary group-hover:scale-115 transition-all ease-in-out cursor-pointer;
   }
+
+  .slider-icon-svg{
+    @apply stroke-2 stroke-black group-hover:stroke-white transition-all ease-in-out;
+  }
 }
