@@ -13,7 +13,15 @@ import HeartIcon from "./nav/heart.svg";
 
 export{
     ShoppingCartIcon,
+    ActionFigureSvg,
+    RemoteCarsSvg,
+    BoardGameSvg,
+    MusicGameSvg,
     ProfileIcon,
+    BlockSetSvg,
+    StuffToySvg,
     SearchIcon,
     HeartIcon,
+    GunToySvg,
+    PlaySvg,
 }

@@ -2,27 +2,30 @@ import { HeartIcon, ProfileIcon, ShoppingCartIcon } from "@/public/svg/index";
 import { Logo } from "@/public/images/index";
 import { Button } from "./custom/button";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Navbar = () => {
   return (
-    <nav className="container flex justify-between py-6">
-      <Image
-        src={Logo}
-        alt="logo"
-        height={400}
-        width={800}
-        quality={100}
-        className="aspect-video w-28"
-      />
-      <div className="flex h-fit gap-6 justify-center items-center">
+    <nav className="flex justify-between py-6 container">
+      <Link href={"/"}>
+        <Image
+          src={Logo}
+          alt="logo"
+          height={400}
+          width={800}
+          quality={100}
+          className="w-28 aspect-video"
+        />
+      </Link>
+      <div className="flex justify-center items-center gap-6 h-fit">
         <input
           type="search"
           name="search"
-          className="outline-2 outline-gray focus:outline-primary font-dm-sans text-sm px-2 w-80 py-2 rounded-sm"
+          className="px-2 py-2 rounded-sm outline-2 outline-gray focus:outline-primary w-80 font-dm-sans text-sm"
           placeholder="Search the store"
         />
-        <div className="flex gap-5 items-center">
+        <div className="flex items-center gap-5">
           <ProfileIcon />
           <HeartIcon />
           <ShoppingCartIcon />

@@ -7,7 +7,7 @@ type IButton = React.HTMLAttributes<HTMLButtonElement> & {
 };
 
 const buttonVariants = cva(
-  "active:scale-95 flex items-center justify-center rounded-sm font-semibold transition-all ease-in-out cursor-pointer hover:shadow-md leading-none tracking-wide text-shadow-sm hover:text-shadow-none",
+  "flex justify-center items-center hover:shadow-md text-shadow-sm hover:text-shadow-none rounded-sm font-semibold leading-none tracking-wide active:scale-95 transition-all ease-in-out cursor-pointer",
   {
     variants: {
       variant: {

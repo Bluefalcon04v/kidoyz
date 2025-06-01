@@ -31,16 +31,3 @@ body::before {
   border-radius: 10px;
   background-color: var(--color-primary);
 }
-
-/* @layer components {
-  .container {
-    width: 100%;
-    max-width: 1450px;
-    margin: 0 auto;
-    padding: 0 4rem;
-  }
-  
-  .svg-style {
-    @apply fill-black hover:fill-primary hover:scale-110 transition-all ease-in-out cursor-pointer;
-  }
-} */
