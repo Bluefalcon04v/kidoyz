@@ -22,7 +22,7 @@
       "@/custom/*": ["./src/app/components/custom/*"],
       "@/components/*": ["./src/app/components/*"],
       "@/public/images/*": ["./public/images/*"],
-      "@/constant/*": ["./src/app/constant/*"],
+      "@/constant/*": ["/src/constant/*"],
       "@/public/svg/*": ["./public/svg/*"],
       "@/utils/*": ["./src/utils/*"],
       "@/*": ["./src/*"]
