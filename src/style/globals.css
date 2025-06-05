@@ -48,16 +48,21 @@ body::before {
 .swiper-pagination-bullet-active {
   background-color: var(--color-primary) !important;
 }
-
-/* .text-outline-white {
-  text-shadow:
-    -1px -1px 0 white,
-     1px -1px 0 white,
-    -1px  1px 0 white,
-     1px  1px 0 white;
+/* 
+.text-outline-shadow {
+  text-shadow: -2px -2px 0 var(--color-white), 2px -2px 0 var(--color-white),
+    -2px 2px 0 var(--color-white), 2px 2px 0 var(--color-white);
 } */
 
+
 .text-outline-shadow {
-  color: white;
-  -webkit-text-stroke: px black;
+  text-shadow:
+    -3px -3px 0 var(--color-white),
+     0   -3px 0 var(--color-white),
+     3px -3px 0 var(--color-white),
+    -3px  0   0 var(--color-white),
+     3px  0   0 var(--color-white),
+    -3px  3px 0 var(--color-white),
+     0    3px 0 var(--color-white),
+     3px  3px 0 var(--color-white);
 }

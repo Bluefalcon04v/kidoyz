@@ -1,7 +1,7 @@
 "use client";
 import CategoryNav from "@/components/categoryNav";
 import HomeSlider from "@/components/homeSlider";
-import { Heading } from "@/components/custom/heading";
+import ShopByReel from "@/components/shopByReel";
 
 export default function Home() {
   return (
@@ -9,7 +9,8 @@ export default function Home() {
       <div className="h-screen">
         <CategoryNav />
         <HomeSlider />
-        <Heading>Hello</Heading>
+        <ShopByReel/>
+       
       </div>
     </>
   );

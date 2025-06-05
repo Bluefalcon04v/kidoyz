@@ -1,3 +1,4 @@
+'use client'
 import { HeartIcon, ProfileIcon, ShoppingCartIcon } from "@/public/svg/index";
 import { Logo } from "@/public/images/index";
 import { Button } from "./custom/button";
@@ -30,7 +31,7 @@ const Navbar = () => {
           <HeartIcon />
           <ShoppingCartIcon />
         </div>
-        <Button variant="primary">Login</Button>
+        <Button variant="primary" >Login</Button>
       </div>
     </nav>
   );
