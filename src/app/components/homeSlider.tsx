@@ -1,8 +1,8 @@
 "use Client";
-import React from "react";
-import Slider from "./slider";
-import Image from "next/image";
 import { HomeImg1 } from "@/../public/images";
+import Image from "next/image";
+import Slider from "./slider";
+import React from "react";
 
 const HomeSlider = () => {
   const sliderData = [HomeImg1, HomeImg1, HomeImg1];

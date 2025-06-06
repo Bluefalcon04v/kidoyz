@@ -1,5 +1,5 @@
 import React from "react";
-import { Heading } from "./custom/heading";
+import { Heading } from "./ui/Heading";
 import { RabbitHeadingImg } from "../../../public/images";
 
 const BackToSchool = () => {

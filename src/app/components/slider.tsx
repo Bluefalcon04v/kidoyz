@@ -8,13 +8,14 @@ import "swiper/css/pagination";
 import "swiper/css";
 
 interface IProps {
+  showArrows?: boolean;
   data?: any;
   card?: any;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   breakpoints?: any;
 }
 
-const Slider = ({ card, data, breakpoints }: IProps) => {
+const Slider = ({ card, data, breakpoints, showArrows = true }: IProps) => {
   const swiperRef = useRef<SwiperClass | null>(null);
 
   const goNext = () => {
@@ -38,24 +39,25 @@ const Slider = ({ card, data, breakpoints }: IProps) => {
   };
   return (
     <div className="relative flex place-content-center place-items-center w-full">
-      <div
-        onClick={goPrev}
-        className="group left-1 z-40 absolute content-center place-items-center bg-white hover:bg-primary shadow-sm rounded-full size-9 active:scale-90 transition-all ease-in-out cursor-pointer"
-      >
-        <LeftSvg />
-      </div>
-
+      {showArrows && (
+        <div
+          onClick={goPrev}
+          className="group left-1 z-40 absolute content-center place-items-center bg-white hover:bg-primary shadow-sm rounded-full size-9 active:scale-90 transition-all ease-in-out cursor-pointer"
+        >
+          <LeftSvg />
+        </div>
+      )}
       <Swiper
         autoplay={{ delay: 3000, disableOnInteraction: false }}
         onSwiper={(swiper) => (swiperRef.current = swiper)}
         modules={[Navigation, Pagination, Autoplay]}
         pagination={{ clickable: true }}
-        allowTouchMove
-        className="mySwiper"
         slidesPerGroup={breakpoints}
         // breakpoints={breakpoints}
         slidesPerView={breakpoints}
+        className="mySwiper"
         spaceBetween={40}
+        allowTouchMove
         speed={800}
         loop
       >
@@ -65,13 +67,14 @@ const Slider = ({ card, data, breakpoints }: IProps) => {
           </SwiperSlide>
         ))}
       </Swiper>
-
-      <div
-        onClick={goNext}
-        className="group right-1 z-40 absolute content-center place-items-center bg-white hover:bg-primary shadow-sm rounded-full size-9 active:scale-90 transition-all ease-in-out cursor-pointer"
-      >
-        <RightSvg />
-      </div>
+      {showArrows && (
+        <div
+          onClick={goNext}
+          className="group right-1 z-40 absolute content-center place-items-center bg-white hover:bg-primary shadow-sm rounded-full size-9 active:scale-90 transition-all ease-in-out cursor-pointer"
+        >
+          <RightSvg />
+        </div>
+      )}
     </div>
   );
 };

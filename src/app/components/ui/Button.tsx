@@ -1,5 +1,6 @@
-import React from "react";
 import { cva } from "class-variance-authority";
+import { cn } from "@/utils/cn";
+import React from "react";
 
 type IButton = React.HTMLAttributes<HTMLButtonElement> & {
   variant?: "primary" | "secondary" | "disabled";
@@ -13,7 +14,7 @@ const buttonVariants = cva(
       variant: {
         primary: "bg-primary text-white active:bg-highlight font-dm-sans",
         secondary: "bg-teal text-white font-dm-sans active:saturate-200",
-        disabled: "bg-stone-200 text-stone-400 !text-shadow-none hover:shadow-none !cursor-not-allowed"
+        disabled: "bg-stone-200 text-stone-400 !text-shadow-none hover:shadow-none !cursor-not-allowed",
       },
       size: {
         default: "px-8 py-2.5",
@@ -36,7 +37,7 @@ export const Button: React.FC<IButton> = ({
   return (
     <button
       {...props}
-      className={buttonVariants({ variant, size, className })}
+      className={cn(buttonVariants({ variant, size, className }))}
     />
   );
 };

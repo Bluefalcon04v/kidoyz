@@ -1,7 +1,10 @@
+import { SHOP_BY_REEL_DATA } from "@/constant/const-data";
+import { CatHeadingImg } from "@/../public/images";
+import { IReelCard } from "@/interface/interface";
+import { Heading } from "./ui/Heading";
+import Slider from "./slider";
+import Image from "next/image";
 import React from "react";
-import { Heading } from "@/custom/heading";
-import { CatHeadingImg, SRBImg1, SRBImg2, SRBImg3 } from "@/../public/images";
-import Image, { StaticImageData } from "next/image";
 
 const ShopByReel = () => {
   return (
@@ -12,11 +15,20 @@ const ShopByReel = () => {
       <Heading variant="secondary" size="lg">
         Nurture Your Child’s Imagination—the Right Way!
       </Heading>
-      <div className="gap-x-6 grid grid-cols-4 bg-white my-8 p-4 rounded-sm w-full">
-        <ReelCard image={SRBImg1} />
-        <ReelCard image={SRBImg2} />
-        <ReelCard image={SRBImg1} />
-        <ReelCard image={SRBImg3} />
+      <div className="bg-white my-8 p-4 rounded-sm w-full">
+        <Slider
+          card={(item: IReelCard) => (
+            <ReelCard
+              sellingPrice={item.sellingPrice}
+              actualPrice={item.actualPrice}
+              image={item.image}
+              title={item.title}
+            />
+          )}
+          data={SHOP_BY_REEL_DATA}
+          breakpoints={4}
+          showArrows={false}
+        />
       </div>
     </div>
   );
@@ -24,11 +36,7 @@ const ShopByReel = () => {
 
 export default ShopByReel;
 
-interface IReelCard {
-  image: string | StaticImageData;
-}
-
-const ReelCard = ({ image }: IReelCard) => {
+const ReelCard = ({ image, title, sellingPrice, actualPrice }: IReelCard) => {
   return (
     <div className="relative w-full h-full">
       <Image
@@ -48,10 +56,10 @@ const ReelCard = ({ image }: IReelCard) => {
           className="border border-white rounded-sm size-14 object-center aspect-square"
         />
         <div className="text-shadow-sm pl-2 font-rubik text-white">
-          <p>Wooden Dressing Pink & White</p>
+          <p>{title}</p>
           <div className="flex gap-3">
-            <p>₹ 15,000</p>
-            <p className="line-through">₹ 19,800</p>
+            <p>₹ {sellingPrice}</p>
+            <p className="line-through">₹ {actualPrice}</p>
           </div>
         </div>
       </div>

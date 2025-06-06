@@ -1,7 +1,7 @@
 'use client'
 import { HeartIcon, ProfileIcon, ShoppingCartIcon } from "@/public/svg/index";
 import { Logo } from "@/public/images/index";
-import { Button } from "./custom/button";
+import { Button } from "./ui/Button";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
