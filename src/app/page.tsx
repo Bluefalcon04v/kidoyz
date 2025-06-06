@@ -15,7 +15,9 @@ export default function Home() {
         <ShopByReel/>
         <EveryAgeToys/>
         <BackToSchool/>
-        <Card/>
+        <Card >
+          <Card.Title variant={"main"} >Hello world</Card.Title>
+        </Card>
       </div>
     </>
   );
