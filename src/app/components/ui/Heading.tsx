@@ -2,7 +2,7 @@ import React from "react";
 import { cva } from "class-variance-authority";
 import Image, { StaticImageData } from "next/image";
 
-type IHeading = React.HTMLAttributes<HTMLHeadingElement> & {
+export type IHeading = React.HTMLAttributes<HTMLHeadingElement> & {
   variant?: "main" | "secondary";
   image?: string | StaticImageData;
   size?: "default" | "sm" | "lg" | "xl";
