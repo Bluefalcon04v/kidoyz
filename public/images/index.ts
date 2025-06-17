@@ -10,6 +10,11 @@ import twoTOFiveYearsImg from "./age-card-img/2-5years.png";
 import oneToTwoYearsImg from "./age-card-img/1-2years.png";
 import CatHeadingImg from "./heading-img/cat.heading.png";
 import AgeCardBGImg from "./age-card-img/age-card.bg.png";
+import B2SImg1 from "./back-to-school-img/b2S-img1.png";
+import B2SImg2 from "./back-to-school-img/b2S-img2.png";
+import B2SImg3 from "./back-to-school-img/b2S-img3.png";
+import B2SImg4 from "./back-to-school-img/b2S-img4.png";
+import B2SImg5 from "./back-to-school-img/b2S-img5.png";
 import SRBImg1 from "./shop-by-reels-img/SBRImg1.png";
 import SRBImg2 from "./shop-by-reels-img/SBRImg2.png";
 import SRBImg3 from "./shop-by-reels-img/SBRImg3.png";
@@ -31,6 +36,11 @@ export {
   CatHeadingImg,
   AgeCardBGImg,
   HomeImg1,
+  B2SImg1,
+  B2SImg2,
+  B2SImg3,
+  B2SImg4,
+  B2SImg5,
   SRBImg1,
   SRBImg2,
   SRBImg3,

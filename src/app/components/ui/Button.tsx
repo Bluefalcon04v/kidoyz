@@ -2,9 +2,9 @@ import { cva } from "class-variance-authority";
 import { cn } from "@/utils/cn";
 import React from "react";
 
-type IButton = React.HTMLAttributes<HTMLButtonElement> & {
+export type IButton = React.HTMLAttributes<HTMLButtonElement> & {
   variant?: "primary" | "secondary" | "disabled";
-  size?: "default" | "sm";
+  size?: "default" | "sm" | "lg";
 };
 
 const buttonVariants = cva(
@@ -14,11 +14,13 @@ const buttonVariants = cva(
       variant: {
         primary: "bg-primary text-white active:bg-highlight font-dm-sans",
         secondary: "bg-teal text-white font-dm-sans active:saturate-200",
-        disabled: "bg-stone-200 text-stone-400 !text-shadow-none hover:shadow-none !cursor-not-allowed",
+        disabled:
+          "bg-stone-200 text-stone-400 !text-shadow-none hover:shadow-none !cursor-not-allowed",
       },
       size: {
         default: "px-8 py-2.5",
         sm: "px-2 py-1 text-sm",
+        lg: "px-3 py-4 text-lg",
       },
     },
     defaultVariants: {
