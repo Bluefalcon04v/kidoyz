@@ -12,15 +12,15 @@ const BackToSchool = () => {
       </Heading>
       <div className="gap-16 grid grid-cols-3 mt-10 h-full">
         {BACK_TO_SCHOOL_DATA.map((item, index) => (
-          <Card key={index} className="flex flex-col justify-between gap-2 hover:bg-primary/20 rounded-t-full w-full h-full">
+          <Card key={index} className="flex flex-col justify-between gap-2 hover:bg-primary/20 hover:shadow-xl rounded-t-full w-full h-full">
             <Card.Image
-              src={item.image}
               className="object-cover"
               variant="top-rounded"
+              src={item.image}
               alt="image"
             ></Card.Image>
-            <Card.Text className="justify-start h-full !font-dm-sans font-medium font-medium text-black text-center tracking-[1.5px]" >{item.title}</Card.Text>
-            <Card.Text alignment="center" className="mb-2" variant="secondary">
+            <Card.Text className="justify-start h-full !font-dm-sans font-medium text-black text-center" tracking="md"  size="md">{item.title}</Card.Text>
+            <Card.Text alignment="center" className="mb-2" variant="secondary" size="md">
               Rs. {item.price}
             </Card.Text>
             <Card.Button size="lg" variant="primary" className="w-full !font-medium uppercase">
@@ -28,6 +28,9 @@ const BackToSchool = () => {
             </Card.Button>
           </Card>
         ))}
+      </div>
+      <div className="float-right text-shadow-2xs my-8 w-fit font-lato text-highlight hover:text-primary text-xl text-end capitalize tracking-wide cursor-pointer">
+        view all
       </div>
     </div>
   );

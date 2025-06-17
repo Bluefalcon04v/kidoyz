@@ -54,15 +54,40 @@ body::before {
     -2px 2px 0 var(--color-white), 2px 2px 0 var(--color-white);
 } */
 
-
 .text-outline-shadow {
   text-shadow:
     -3px -3px 0 var(--color-white),
-     0   -3px 0 var(--color-white),
-     3px -3px 0 var(--color-white),
-    -3px  0   0 var(--color-white),
-     3px  0   0 var(--color-white),
-    -3px  3px 0 var(--color-white),
-     0    3px 0 var(--color-white),
-     3px  3px 0 var(--color-white);
+    0 -3px 0 var(--color-white),
+    3px -3px 0 var(--color-white),
+    -3px 0 0 var(--color-white),
+    3px 0 0 var(--color-white),
+    -3px 3px 0 var(--color-white),
+    0 3px 0 var(--color-white),
+    3px 3px 0 var(--color-white);
+}
+
+/* ------------------------ Bento Grid Styling ---------------------- */
+.bento-box {
+  height: 100%;
+  width: 100%;
+  border: 2px solid transparent;
+  border-radius: 1.5em;
+  cursor: pointer;
+  &:hover {
+    border: 2px solid var(--color-white);
+  }
+}
+
+.grid-container-style {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 1em;
+  grid-template-areas:
+    "bento-box-1 bento-box-1 bento-box-2 bento-box-3"
+    "bento-box-1 bento-box-1 bento-box-2 bento-box-3"
+    "bento-box-4 bento-box-5 bento-box-5 bento-box-3"
+    "bento-box-4 bento-box-5 bento-box-5 bento-box-6"
+    "bento-box-4 bento-box-7 bento-box-7 bento-box-6"
+    "bento-box-4 bento-box-7 bento-box-7 bento-box-6";
 }

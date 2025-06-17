@@ -19,8 +19,16 @@ import SRBImg1 from "./shop-by-reels-img/SBRImg1.png";
 import SRBImg2 from "./shop-by-reels-img/SBRImg2.png";
 import SRBImg3 from "./shop-by-reels-img/SBRImg3.png";
 import HomeImg1 from "./abstract-img/home-img1.png";
+import NABox1 from "./new-arrivals/na-box1-img.png";
+import NABox2 from "./new-arrivals/na-box2-img.png";
+import NABox3 from "./new-arrivals/na-box3-img.png";
+import NABox4 from "./new-arrivals/na-box4-img.png";
+import NABox5 from "./new-arrivals/na-box5-img.png";
+import NABox6 from "./new-arrivals/na-box6-img.png";
+import NABox7 from "./new-arrivals/na-box7-img.png";
 import BGImg from "./background-img.png";
 import Logo from "./logo.png";
+
 
 export {
   eightToTwelveYearsImg,
@@ -44,6 +52,13 @@ export {
   SRBImg1,
   SRBImg2,
   SRBImg3,
+  NABox1,
+  NABox2,
+  NABox3,
+  NABox4,
+  NABox5,
+  NABox6,
+  NABox7,
   BGImg,
   Logo,
 };

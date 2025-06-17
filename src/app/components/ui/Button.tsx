@@ -3,7 +3,7 @@ import { cn } from "@/utils/cn";
 import React from "react";
 
 export type IButton = React.HTMLAttributes<HTMLButtonElement> & {
-  variant?: "primary" | "secondary" | "disabled";
+  variant?: "primary" | "secondary" | "disabled" ;
   size?: "default" | "sm" | "lg";
 };
 

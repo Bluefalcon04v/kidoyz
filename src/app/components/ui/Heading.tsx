@@ -43,9 +43,9 @@ export const Heading: React.FC<IHeading> = ({
         <Image
           src={image}
           alt={`default ${image}`}
-          width={200}
+          width={300}
           height={200}
-          className="size-24 object-cover aspect-square"
+          className="mr-2 h-fit size-28 object-contain aspect-auto"
         />
       )}
       <h1
