@@ -21,8 +21,8 @@
     "paths": {
       "@/components/*": ["./src/app/components/*"],
       "@/public/images/*": ["./public/images/*"],
-      // "@/constant/*": ["./src/constant/*"],
       "@/public/svg/*": ["./public/svg/*"],
+      "@/hooks/*": ["./src/hooks/*"],
       "@/utils/*": ["./src/utils/*"],
       "@/*": ["./src/*"]
     }

@@ -156,3 +156,16 @@ export const POPULAR_HIGHLIGHTS_DATA = [
   { image: PBImg2, link: "/" },
   { image: PBImg2, link: "/" },
 ];
+
+export const SHOPPING_FOR_DROPDOWN_DATA = [
+  { name: "0 - 1 years", value: "1" },
+  { name: "1 - 2 years", value: "2" },
+  { name: "2 - 5 years", value: "3" },
+  { name: "5 - 8 years", value: "4" },
+  { name: "8 - 12 years", value: "5" },
+];
+
+export const TOYS_FOR_DROPDOWN_DATA = [
+  { name: "0 - 1 years", value: "1" },
+
+]
