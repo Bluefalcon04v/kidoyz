@@ -3,32 +3,31 @@ import { cva } from "class-variance-authority";
 import Image, { StaticImageData } from "next/image";
 
 export type IHeading = React.HTMLAttributes<HTMLHeadingElement> & {
-  variant?: "main" | "secondary";
+  variant?: "default" | "main" | "secondary";
   image?: string | StaticImageData;
-  size?: "default" | "sm" | "lg" | "xl";
+  size?: "default" | "sm" | "base" | "lg" | "xl";
 };
 
-const headingVariants = cva(
-  "tracking-wider",
-  {
-    variants: {
-      variant: {
-        main: " text-outline-shadow font-jua font-bold text-highlight ",
-        secondary: "text-dark-gray font-semibold font-jua",
-      },
-      size: {
-        default: "text-xl",
-        sm: "text-md",
-        lg: "text-2xl",
-        xl: "text-4xl",
-      },
+const headingVariants = cva("tracking-wider", {
+  variants: {
+    variant: {
+      main: " text-outline-shadow font-jua font-bold text-highlight ",
+      secondary: "text-secondary font-semibold font-jua",
+      default: "text-dark-gray font-jua font-semibold",
     },
-    defaultVariants: {
-      variant: "main",
-      size: "default",
+    size: {
+      default: "text-xl",
+      sm: "text-md",
+      base: "text-xl",
+      lg: "text-2xl",
+      xl: "text-4xl",
     },
-  }
-);
+  },
+  defaultVariants: {
+    variant: "main",
+    size: "default",
+  },
+});
 
 export const Heading: React.FC<IHeading> = ({
   className,

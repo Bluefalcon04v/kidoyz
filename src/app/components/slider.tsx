@@ -6,16 +6,18 @@ import React, { useRef } from "react";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css";
+import { cn } from "../../utils/cn";
 
 interface IProps {
   showArrows?: boolean;
+  className?: string;
   data?: any;
   card?: any;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   breakpoints?: any;
 }
 
-const Slider = ({ card, data, breakpoints, showArrows = true }: IProps) => {
+const Slider = ({ card, data, breakpoints, showArrows = true, className }: IProps) => {
   const swiperRef = useRef<SwiperClass | null>(null);
 
   const goNext = () => {
@@ -38,7 +40,12 @@ const Slider = ({ card, data, breakpoints, showArrows = true }: IProps) => {
     }
   };
   return (
-    <div className="relative flex place-content-center place-items-center w-full">
+    <div
+      className={cn(
+        "relative flex place-content-center place-items-center w-full",
+        className
+      )}
+    >
       {showArrows && (
         <div
           onClick={goPrev}

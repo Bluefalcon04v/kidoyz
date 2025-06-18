@@ -2,22 +2,24 @@ import React from "react";
 import { cva } from "class-variance-authority";
 
 export type IText = React.HTMLAttributes<HTMLHeadingElement> & {
-  variant?: "main" | "secondary";
-  size?: "default" | "sm" | "md" | "lg" | "xl";
+  variant?: "default" | "main" | "secondary";
+  size?: "default" | "sm" | "md" | "base" | "lg" | "xl";
   alignment?: "left" | "center" | "right";
   tracking?: "sm" | "md";
 };
 
-const textVariants = cva("flex px-2 font-lato", {
+const textVariants = cva("flex px-2 font-lato text-pretty", {
   variants: {
     variant: {
       main: "text-dark-gray ",
       secondary: "text-neutral ",
+      default: "text-black",
     },
     size: {
       default: "text-xl",
       sm: "text-md",
       md: "text-base",
+      base: "text-lg",
       lg: "text-2xl",
       xl: "text-4xl",
     },
@@ -27,12 +29,12 @@ const textVariants = cva("flex px-2 font-lato", {
     },
     alignment: {
       left: "justify-start",
-      center: "justify-center ",
+      center: "justify-center text-center ",
       right: "justify-end",
     },
   },
   defaultVariants: {
-    variant: "main",
+    variant: "default",
     size: "default",
     alignment: "left",
   },

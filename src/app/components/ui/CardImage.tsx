@@ -15,7 +15,7 @@ const cardImageVariants = cva("flex justify-center object-cover", {
   },
 });
 
-export const CardImage: React.FC<ICardImage> = ({
+export const CustomImage: React.FC<ICardImage> = ({
   className,
   variant,
   alt,

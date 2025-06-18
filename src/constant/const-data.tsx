@@ -9,6 +9,10 @@ import {
   PlaySvg,
 } from "@/../public/svg";
 import {
+  PTKCognitiveSkillImg3,
+  PTKMaterialUsedImg4,
+  PTKScreenFreeImg2,
+  PTKBrainDevImg1,
   B2SImg1,
   B2SImg2,
   B2SImg3,
@@ -17,6 +21,8 @@ import {
   SRBImg1,
   SRBImg2,
   SRBImg3,
+  PBImg1,
+  PBImg2,
 } from "@/../public/images";
 
 export const CATEGORY_ITEMS = [
@@ -130,4 +136,23 @@ export const BACK_TO_SCHOOL_DATA = [
       "Owl Toddler Backpack Baby Boys Girls Kindergarten Pre School Bags Cute Neoprene Cartoon Backpacks for Kids",
     price: "999",
   },
+];
+
+export const PARENTS_TRUST_KIDYOZS_DATA = [
+  { image: PTKBrainDevImg1, title: " Early brain development " },
+  { image: PTKScreenFreeImg2, title: " Screen-free learning  " },
+  {
+    image: PTKCognitiveSkillImg3,
+    title: " Improvement in cognitive Skills ",
+  },
+  { image: PTKMaterialUsedImg4, title: " Sustainable Material Usage" },
+];
+
+export const POPULAR_HIGHLIGHTS_DATA = [
+  { image: PBImg1, link: "/" },
+  { image: PBImg2, link: "/" },
+  { image: PBImg1, link: "/" },
+  { image: PBImg1, link: "/" },
+  { image: PBImg2, link: "/" },
+  { image: PBImg2, link: "/" },
 ];

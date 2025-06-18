@@ -12,7 +12,7 @@ const ShopByReel = () => {
       <Heading size="xl" image={CatHeadingImg}>
         Shop By Reels
       </Heading>
-      <Heading variant="secondary" size="lg">
+      <Heading variant="default" size="lg">
         Nurture Your Child’s Imagination—the Right Way!
       </Heading>
       <div className="bg-white my-8 p-4 rounded-sm w-full">

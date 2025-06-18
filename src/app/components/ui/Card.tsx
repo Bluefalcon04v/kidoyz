@@ -1,4 +1,4 @@
-import { CardImage as CustomImage, ICardImage } from "./CardImage";
+import { CustomImage, ICardImage } from "./CardImage";
 import { Heading, IHeading } from "./Heading";
 import { Button, IButton } from "./Button";
 import { IText, Text } from "./Text";
