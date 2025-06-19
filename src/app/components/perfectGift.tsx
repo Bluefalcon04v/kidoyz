@@ -1,10 +1,14 @@
+import {
+  SHOPPING_FOR_DROPDOWN_DATA,
+  TOYS_FOR_DROPDOWN_DATA,
+} from "@/constant/const-data";
 import { MusicHeadingImg, PerfectGiftImg } from "@/../public/images";
-import { SHOPPING_FOR_DROPDOWN_DATA, TOYS_FOR_DROPDOWN_DATA } from "@/constant/const-data";
 import Dropdown, { IDropdownRef } from "./ui/Dropdown";
 import { CustomImage } from "./ui/CardImage";
 import { Heading } from "./ui/Heading";
 import React, { useRef } from "react";
 import { Text } from "./ui/Text";
+import { Button } from "./ui/Button";
 
 const PerfectGift = () => {
   const dropdownRef = useRef<IDropdownRef>(null);
@@ -23,9 +27,9 @@ const PerfectGift = () => {
         Find the perfect gift
       </Heading>
       <div className="place-content-center place-items-center grid grid-cols-3">
-        <div className="flex flex-col gap-10 col-span-2 py-12 w-full h-full">
+        <div className="flex flex-col gap-10 col-span-2 py-12 w-4/6 h-full">
           <div className="flex justify-start items-start gap-4">
-            <Text variant="main" size="lg" className="w-fit !font-jua">
+            <Text variant="main" size="lg" className="!min-w-max !font-jua">
               {" "}
               I am shopping for{" "}
             </Text>
@@ -34,11 +38,10 @@ const PerfectGift = () => {
               defaultValue="0 - 1 years"
               ref={dropdownRef}
               options={SHOPPING_FOR_DROPDOWN_DATA}
-              className="!w-fit"
             />
           </div>
           <div className="flex justify-start items-start gap-12">
-            <Text variant="main" size="lg" className="w-fit !font-jua">
+            <Text variant="main" size="lg" className="min-w-max !font-jua">
               {" "}
               They like a lot
             </Text>
@@ -47,9 +50,9 @@ const PerfectGift = () => {
               defaultValue="Trains & Vehicles "
               ref={dropdownRef}
               options={TOYS_FOR_DROPDOWN_DATA}
-              className="!w-fit"
             />
           </div>
+          <Button>Find a Gift</Button>
         </div>
         <CustomImage
           src={PerfectGiftImg}
@@ -62,7 +65,3 @@ const PerfectGift = () => {
 };
 
 export default PerfectGift;
-
-
-
-
