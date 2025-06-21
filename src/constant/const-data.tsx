@@ -166,6 +166,45 @@ export const SHOPPING_FOR_DROPDOWN_DATA = [
 ];
 
 export const TOYS_FOR_DROPDOWN_DATA = [
-  { name: "0 - 1 years", value: "1" },
+  { name: "Trains & Vehicles", value: "1" },
+  { name: "Toy Guns", value: "2" },
+  { name: "Bags", value: "3" },
+];
 
-]
+export const OUR_FRESH_NEWS_DATA = [
+  {
+    link: "/",
+    customer: "Jenny Wilson",
+    time: "May 9, 2025",
+    title: "Effect of block games in early age of children",
+    desc: "Lorem ipsum dolor sit amet consectetur. Quisque pharetra aenean tincidunt ut vitae scelevolutpat.",
+  },
+  {
+    link: "/",
+    customer: "Jenny Wilson",
+    time: "May 9, 2025",
+    title: "How color impact on children's ",
+    desc: "Lorem ipsum dolor sit amet consectetur. Quisque pharetra aenean tincidunt.",
+  },
+  {
+    link: "/",
+    customer: "Jenny Wilson",
+    time: "May 9, 2025",
+    title: "How wood toys safe for your babies Health",
+    desc: "Lorem ipsum dolor sit amet consectetur. Quisque pharetra aenean tincidunt ut vitae scelevolutpat.",
+  },
+  {
+    link: "/",
+    customer: "Jenny Wilson",
+    time: "May 9, 2025",
+    title: "How color impact on children's ",
+    desc: "Lorem ipsum dolor sit amet consectetur. Quisque pharetra aenean tincidunt.",
+  },
+  {
+    link: "/",
+    customer: "Jenny Wilson",
+    time: "May 9, 2025",
+    title: "How wood toys safe for your babies Health",
+    desc: "Lorem ipsum dolor sit amet consectetur. Quisque pharetra aenean tincidunt ut vitae scelevolutpat.",
+  },
+];

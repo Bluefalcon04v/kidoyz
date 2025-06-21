@@ -92,7 +92,7 @@ body::before {
     "bento-box-4 bento-box-7 bento-box-7 bento-box-6";
 }
 
-.popular-background-img{
+.popular-background-img {
   background-image: url("../../public/images/popular-highlight-img/popular-background-img.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -100,4 +100,16 @@ body::before {
   filter: opacity(0.4);
   height: 70vh;
   max-height: 1000px;
+}
+
+/* -------------------------------------------------------- Starting Style ---------------------------------------------- */
+.dropdown-starting-style {
+  transition: all 0.3s ease;
+  transform: translateY(0%);
+  opacity: 1;
+
+  @starting-style {
+    opacity: 0;
+    transform: translateY(-10%);
+  }
 }

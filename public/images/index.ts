@@ -9,6 +9,7 @@ import RabbitHeadingImg from "./heading-img/rabbit.heading.png";
 import MusicHeadingImg from "./heading-img/music.heading.png";
 import TrainHeadingImg from "./heading-img/train.heading.png";
 import fiveToEightYearsImg from "./age-card-img/5-8years.png";
+import CRImg1 from "./customer-reviews-img/customer-img1.png";
 import BearHeadingImg from "./heading-img/bear.heading.png";
 import DuckHeadingImg from "./heading-img/duck.heading.png";
 import zeroToOneYearsImg from "./age-card-img/0-1years.png";
@@ -72,6 +73,7 @@ export {
   NABox5,
   NABox6,
   NABox7,
+  CRImg1,
   PBImg2,
   PBImg1,
   BGImg,

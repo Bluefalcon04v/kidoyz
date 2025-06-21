@@ -7,8 +7,8 @@ import Dropdown, { IDropdownRef } from "./ui/Dropdown";
 import { CustomImage } from "./ui/CardImage";
 import { Heading } from "./ui/Heading";
 import React, { useRef } from "react";
-import { Text } from "./ui/Text";
 import { Button } from "./ui/Button";
+import { Text } from "./ui/Text";
 
 const PerfectGift = () => {
   const dropdownRef = useRef<IDropdownRef>(null);
@@ -47,12 +47,12 @@ const PerfectGift = () => {
             </Text>
             <Dropdown
               onChange={handleDropdownChange}
-              defaultValue="Trains & Vehicles "
-              ref={dropdownRef}
+              defaultValue="Trains & Vehicles"
               options={TOYS_FOR_DROPDOWN_DATA}
+              ref={dropdownRef}
             />
           </div>
-          <Button>Find a Gift</Button>
+          <Button variant="primary">Find a Gift</Button>
         </div>
         <CustomImage
           src={PerfectGiftImg}

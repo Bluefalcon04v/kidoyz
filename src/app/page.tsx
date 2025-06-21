@@ -1,8 +1,10 @@
 "use client";
 import ParentsTrustKidyoz from "@/components/parentsTrustKidyoz";
 import PopularHighlights from "@/components/popularHighlights";
+import ClientReviews from "@/components/clientReviews";
 import EveryAgeToys from "@/components/everyAgeToys";
 import BackToSchool from "./components/backToSchool";
+import OurFreshNews from "@/components/ourFreshNews";
 import NewArrivals from "@/components/newArrivals";
 import PerfectGift from "./components/perfectGift";
 import CategoryNav from "@/components/categoryNav";
@@ -21,6 +23,8 @@ export default function Home() {
       <ParentsTrustKidyoz />
       <PopularHighlights/>
       <PerfectGift/>
+      <ClientReviews/>
+      <OurFreshNews/>
     </div>
   );
 }

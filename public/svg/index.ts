@@ -9,6 +9,7 @@ import GunToySvg from "./category/gun-toys.svg";
 import ProfileIcon from "./nav/profile.svg";
 import SearchIcon from "./nav/search.svg";
 import PlaySvg from "./category/play.svg";
+import DropdownSvg from "./dropdown.svg";
 import HeartIcon from "./nav/heart.svg";
 import RightSvg from "./right.svg";
 import LeftSvg from "./left.svg";
@@ -19,6 +20,7 @@ export {
   RemoteCarsSvg,
   BoardGameSvg,
   MusicGameSvg,
+  DropdownSvg,
   ProfileIcon,
   BlockSetSvg,
   StuffToySvg,
