@@ -7,6 +7,9 @@ import {
   StuffToySvg,
   GunToySvg,
   PlaySvg,
+  FC_DeliverySvg,
+  FC_FastShippingSvg,
+  FC_PaymentSvg,
 } from "@/../public/svg";
 import {
   PTKCognitiveSkillImg3,
@@ -23,6 +26,9 @@ import {
   SRBImg3,
   PBImg1,
   PBImg2,
+  OFNImg1,
+  OFNImg2,
+  OFNImg3,
 } from "@/../public/images";
 
 export const CATEGORY_ITEMS = [
@@ -174,6 +180,7 @@ export const TOYS_FOR_DROPDOWN_DATA = [
 export const OUR_FRESH_NEWS_DATA = [
   {
     link: "/",
+    image: OFNImg1,
     customer: "Jenny Wilson",
     time: "May 9, 2025",
     title: "Effect of block games in early age of children",
@@ -181,6 +188,7 @@ export const OUR_FRESH_NEWS_DATA = [
   },
   {
     link: "/",
+    image: OFNImg2,
     customer: "Jenny Wilson",
     time: "May 9, 2025",
     title: "How color impact on children's ",
@@ -188,6 +196,7 @@ export const OUR_FRESH_NEWS_DATA = [
   },
   {
     link: "/",
+    image: OFNImg3,
     customer: "Jenny Wilson",
     time: "May 9, 2025",
     title: "How wood toys safe for your babies Health",
@@ -195,6 +204,7 @@ export const OUR_FRESH_NEWS_DATA = [
   },
   {
     link: "/",
+    image: OFNImg1,
     customer: "Jenny Wilson",
     time: "May 9, 2025",
     title: "How color impact on children's ",
@@ -202,9 +212,28 @@ export const OUR_FRESH_NEWS_DATA = [
   },
   {
     link: "/",
+    image: OFNImg3,
     customer: "Jenny Wilson",
     time: "May 9, 2025",
     title: "How wood toys safe for your babies Health",
     desc: "Lorem ipsum dolor sit amet consectetur. Quisque pharetra aenean tincidunt ut vitae scelevolutpat.",
+  },
+];
+
+export const FEATURES_COMPONENT_DATA = [
+  {
+    icon: <FC_FastShippingSvg />,
+    title: "30 DAY RETURNS",
+    desc: "No-nonsense return policy if you are not happy",
+  },
+  {
+    icon: <FC_DeliverySvg />,
+    title: "FAST SHIPPING",
+    desc: "Your precious package is expedited and insured",
+  },
+  {
+    icon: <FC_PaymentSvg />,
+    title: "SECURE PAYMENT",
+    desc: "Pay with the smartest and most secure apps",
   },
 ];

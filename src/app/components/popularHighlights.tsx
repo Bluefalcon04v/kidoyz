@@ -13,7 +13,7 @@ const PopularHighlights = () => {
           className="z-10 absolute px-16 h-full"
           card={(item: { image: string; link: string }) => (
             <Link href={item.link} >
-              <CustomImage src={item.image} alt={`Highlight image`} />
+              <CustomImage src={item.image} alt={`Highlight image`} className="mb-10" />
             </Link>
           )}
           data={POPULAR_HIGHLIGHTS_DATA}

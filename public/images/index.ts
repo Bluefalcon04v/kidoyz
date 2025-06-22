@@ -16,6 +16,9 @@ import zeroToOneYearsImg from "./age-card-img/0-1years.png";
 import twoTOFiveYearsImg from "./age-card-img/2-5years.png";
 import oneToTwoYearsImg from "./age-card-img/1-2years.png";
 import CatHeadingImg from "./heading-img/cat.heading.png";
+import OFNImg1 from "./our-fresh-news-image/ofn-img1.png";
+import OFNImg2 from "./our-fresh-news-image/ofn-img2.png";
+import OFNImg3 from "./our-fresh-news-image/ofn-img3.png";
 import AgeCardBGImg from "./age-card-img/age-card.bg.png";
 import PBImg1 from "./popular-highlight-img/PB-img1.png";
 import PBImg2 from "./popular-highlight-img/PB-img2.png";
@@ -35,6 +38,7 @@ import NABox4 from "./new-arrivals/na-box4-img.png";
 import NABox5 from "./new-arrivals/na-box5-img.png";
 import NABox6 from "./new-arrivals/na-box6-img.png";
 import NABox7 from "./new-arrivals/na-box7-img.png";
+import Avatar from "./abstract-img/avatar-img.png";
 import BGImg from "./background-img.png";
 import Logo from "./logo.png";
 
@@ -60,12 +64,16 @@ export {
   HomeImg1,
   B2SImg1,
   B2SImg2,
+  OFNImg1,
+  OFNImg2,
+  OFNImg3,
   B2SImg3,
   B2SImg4,
   B2SImg5,
   SRBImg1,
   SRBImg2,
   SRBImg3,
+  Avatar,
   NABox1,
   NABox2,
   NABox3,

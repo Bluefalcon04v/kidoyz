@@ -17,7 +17,7 @@ const textVariants = cva("flex px-2 font-lato text-pretty", {
     },
     size: {
       default: "text-xl",
-      sm: "text-md",
+      sm: "text-sm",
       md: "text-base",
       base: "text-lg",
       lg: "text-2xl",
