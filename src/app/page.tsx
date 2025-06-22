@@ -3,6 +3,7 @@ import ParentsTrustKidyoz from "@/components/parentsTrustKidyoz";
 import PopularHighlights from "@/components/popularHighlights";
 import FeaturesComponent from "@/components/featuresComponent";
 import ClientReviews from "@/components/clientReviews";
+import InstagramFeed from "@/components/instagramFeed";
 import EveryAgeToys from "@/components/everyAgeToys";
 import BackToSchool from "./components/backToSchool";
 import OurFreshNews from "@/components/ourFreshNews";
@@ -27,6 +28,7 @@ export default function Home() {
       <ClientReviews />
       <OurFreshNews />
       <FeaturesComponent />
+      <InstagramFeed/>
     </div>
   );
 }

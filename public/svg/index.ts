@@ -1,5 +1,6 @@
 import FC_FastShippingSvg from "./feature-component-svg/fast-shipping.svg";
 import FC_DeliverySvg from "./feature-component-svg/delivery.svg";
+import GrayInstagramSvg from "./social-icons/gray-instagram.svg";
 import FC_PaymentSvg from "./feature-component-svg/payment.svg";
 import ActionFigureSvg from "./category/action-figure.svg";
 import ShoppingCartIcon from "./nav/shopping-cart.svg";
@@ -20,6 +21,7 @@ import LeftSvg from "./left.svg";
 export {
   FC_FastShippingSvg,
   ShoppingCartIcon,
+  GrayInstagramSvg,
   ActionFigureSvg,
   FC_DeliverySvg,
   RemoteCarsSvg,
