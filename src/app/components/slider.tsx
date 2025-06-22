@@ -11,13 +11,21 @@ import { cn } from "../../utils/cn";
 interface IProps {
   showArrows?: boolean;
   className?: string;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   data?: any;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   card?: any;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   breakpoints?: any;
 }
 
-const Slider = ({ card, data, breakpoints, showArrows = true, className }: IProps) => {
+const Slider = ({
+  card,
+  data,
+  breakpoints,
+  showArrows = true,
+  className,
+}: IProps) => {
   const swiperRef = useRef<SwiperClass | null>(null);
 
   const goNext = () => {
@@ -68,7 +76,7 @@ const Slider = ({ card, data, breakpoints, showArrows = true, className }: IProp
         speed={800}
         loop
       >
-        {data.map((slide, index) => (
+        {data.map((slide, index:number) => (
           <SwiperSlide key={index}>
             <div>{card!(slide)}</div>
           </SwiperSlide>
