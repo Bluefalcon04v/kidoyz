@@ -9,7 +9,7 @@ const FeaturesComponent = () => {
         <Card key={index} className="flex place-content-center place-items-center gap-4 bg-white shadow-neutral-200 shadow-sm p-4 rounded-lg min-h-36 !cursor-default">
           <Card.Text>{i.icon}</Card.Text>
           <div>
-            <Card.Text variant="main" size="base" className="!font-dm-sans font-medium">{i.title}</Card.Text>
+            <Card.Text variant="main" size="base" className="!font-dm-sans font-semibold">{i.title}</Card.Text>
             <Card.Text variant="secondary" size="base" tracking="sm" className="!font-lato leading-tight">{i.desc}</Card.Text>
           </div>
         </Card>

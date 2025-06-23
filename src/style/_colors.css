@@ -5,9 +5,10 @@
   /* Brand Colors */
   --color-primary: #f89c1d;
   --color-secondary: #512600;
-  --color-highlight: #F27200;
+  --color-secondary-highlight: #6d260d;
+  --color-highlight: #f27200;
   --color-teal: #006874;
-  --color-highlight-teal: #008A94;
+  --color-highlight-teal: #008a94;
 
   /* Neutrals */
   --color-white: #ffffff;

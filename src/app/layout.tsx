@@ -1,4 +1,5 @@
 import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
 import type { Metadata } from "next";
 import "@/style/_tailwind.css";
 import "@/style/globals.css";
@@ -18,10 +19,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="w-full">
+      <body className="relative w-full" >
         <Navbar />
         <div className="container">{children}</div>
       </body>
+      <Footer/>
     </html>
   );
 }

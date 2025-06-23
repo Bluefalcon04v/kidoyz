@@ -10,6 +10,11 @@ import {
   FC_DeliverySvg,
   FC_FastShippingSvg,
   FC_PaymentSvg,
+  PinterestSvg,
+  YoutubeSvg,
+  FacebookSvg,
+  TwitterSvg,
+  InstagramSvg,
 } from "@/../public/svg";
 import {
   PTKCognitiveSkillImg3,
@@ -235,5 +240,60 @@ export const FEATURES_COMPONENT_DATA = [
     icon: <FC_PaymentSvg />,
     title: "SECURE PAYMENT",
     desc: "Pay with the smartest and most secure apps",
+  },
+];
+
+export const FOOTER_DATA = [
+  {
+    title: "Company",
+    links: [
+      { label: "About Us", href: "/about" },
+      { label: "Our Experts", href: "/our-experts" },
+      { label: "Services & Price", href: "/services-and-pricing" },
+      { label: "Latest News", href: "/news" },
+      { label: "Support Center", href: "/support" },
+    ],
+  },
+  {
+    title: "Categories",
+    links: [
+      { label: "Remote Control Toys", href: "/categories/rc-toys" },
+      { label: "Gun Toys", href: "/categories/gun-toys" },
+      { label: "Plush Toys", href: "/categories/plush-toys" },
+      { label: "Action Figure", href: "/categories/action-figures" },
+      { label: "Pretend & Play Set", href: "/categories/pretend-play" },
+    ],
+  },
+  {
+    title: "Support",
+    links: [
+      { label: "Shipping Info", href: "/support/shipping-info" },
+      { label: "Returns", href: "/support/returns" },
+      { label: "Refund", href: "/support/refund" },
+      { label: "How To Order", href: "/support/how-to-order" },
+      { label: "How To Track", href: "/support/track-order" },
+    ],
+  },
+  {
+    title: "Social",
+    links: [
+      {
+        label: "Facebook",
+        href: "https://facebook.com",
+        icon: <FacebookSvg />,
+      },
+      { label: "Twitter", href: "https://twitter.com", icon: <TwitterSvg /> },
+      {
+        label: "Instagram",
+        href: "https://instagram.com",
+        icon: <InstagramSvg />,
+      },
+      {
+        label: "Pinterest",
+        href: "https://pinterest.com",
+        icon: <PinterestSvg />,
+      },
+      { label: "Youtube", href: "https://youtube.com", icon: <YoutubeSvg /> },
+    ],
   },
 ];

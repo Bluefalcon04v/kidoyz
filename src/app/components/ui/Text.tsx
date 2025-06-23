@@ -50,14 +50,14 @@ export const Text: React.FC<IText> = ({
 }) => {
   return (
     <p
-      {...props}
       className={textVariants({
         variant,
         size,
-        className,
         alignment,
         tracking,
+        className,
       })}
+      {...props}
     />
   );
 };
