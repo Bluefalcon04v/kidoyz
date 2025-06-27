@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import { HeartIcon, ProfileIcon, ShoppingCartIcon } from "@/public/svg/index";
 import { Logo } from "@/public/images/index";
 import { Button } from "./ui/Button";
@@ -29,9 +29,11 @@ const Navbar = () => {
         <div className="flex items-center gap-5">
           <ProfileIcon />
           <HeartIcon />
-          <ShoppingCartIcon />
+          <Link href={'./my-cart'}>
+            <ShoppingCartIcon />
+          </Link>
         </div>
-        <Button variant="primary" >Login</Button>
+        <Button variant="primary">Login</Button>
       </div>
     </nav>
   );

@@ -10,6 +10,7 @@ import RemoteCarsSvg from "./category/remote-cars.svg";
 import FacebookSvg from "./social-icons/facebook.svg";
 import MusicGameSvg from "./category/music-game.svg";
 import BoardGameSvg from "./category/board-game.svg";
+import ShippingTruckSvg from  "./shipping-truck.svg";
 import TwitterSvg from "./social-icons/twitter.svg";
 import YoutubeSvg from "./social-icons/youtube.svg";
 import StuffToySvg from "./category/stuff-toy.svg";
@@ -22,12 +23,15 @@ import PlaySvg from "./category/play.svg";
 import DropdownSvg from "./dropdown.svg";
 import HeartIcon from "./nav/heart.svg";
 import RightSvg from "./right.svg";
+import OfferSvg from "./offer.svg";
 import LeftSvg from "./left.svg";
+import TickSvg from "./tick.svg";
 
 export {
   FC_FastShippingSvg,
   ShoppingCartIcon,
   GrayInstagramSvg,
+  ShippingTruckSvg,
   ActionFigureSvg,
   FC_DeliverySvg,
   RemoteCarsSvg,
@@ -48,6 +52,8 @@ export {
   HeartIcon,
   GunToySvg,
   RightSvg,
+  OfferSvg,
   LeftSvg,
+  TickSvg,
   PlaySvg,
 };

@@ -1,0 +1,26 @@
+import ProductAddedInCart from "./components/productAddedInCart";
+import DealOfDayCart from "./components/dealOfDayCart";
+import OrderSummary from "./components/orderSummary";
+import { Text } from "@/components/ui/Text";
+import React from "react";
+
+const MyCart = () => {
+  return (
+    <div>
+      <Text variant="main" className="my-2 !font-jua" size="xl">
+        My Cart
+      </Text>
+      <div className="gap-4 grid grid-cols-3">
+        <div className="flex flex-col gap-4 col-span-2">
+          <ProductAddedInCart />
+          <DealOfDayCart />
+        </div>
+        <div>
+          <OrderSummary />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default MyCart;

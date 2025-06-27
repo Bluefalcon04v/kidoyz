@@ -1,4 +1,4 @@
-@import './_colors.css';
+@import "./_colors.css";
 @import "tailwindcss";
 
 @layer components {
@@ -8,7 +8,7 @@
     margin: 0 auto;
     padding: 0 4rem;
   }
-  
+  /* -------------------------------- svg style ----------------------------------- */
   .svg-style {
     @apply fill-black hover:fill-primary hover:scale-110 transition-all ease-in-out cursor-pointer;
   }
@@ -17,7 +17,16 @@
     @apply fill-secondary group-hover:fill-primary group-hover:scale-115 transition-all ease-in-out cursor-pointer;
   }
 
-  .slider-icon-svg{
+  .slider-icon-svg {
     @apply stroke-2 stroke-black group-hover:stroke-white transition-all ease-in-out;
+  }
+
+  /* -------------------------------- Badge style ----------------------------------- */
+  .badge-style {
+    @apply flex items-center gap-2 px-6 py-1 border-2 border-neutral rounded-md w-fit font-semibold text-gray text-lg;
+  }
+
+  .success-badge-style {
+    @apply bg-[#F0FDF4] border-[#21BF5B] text-[#16A34A];
   }
 }

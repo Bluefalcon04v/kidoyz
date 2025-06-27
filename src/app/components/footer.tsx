@@ -1,3 +1,4 @@
+"use client";
 import { FOOTER_DATA } from "@/constant/const-data";
 import {
   CatHeadingImg,
@@ -7,17 +8,30 @@ import {
   TOSPayoneer,
   TOSPayPal,
 } from "@/../public/images";
+import React, { useEffect, useState } from "react";
 import { RightArrowSvg } from "@/../public/svg";
+import { usePathname } from "next/navigation";
 import { CustomImage } from "./ui/CardImage";
 import { Button } from "./ui/Button";
 import { Text } from "./ui/Text";
+import { cn } from "@/utils/cn";
 import Link from "next/link";
-import React from "react";
 
 const Footer = () => {
+  const pathname = usePathname();
+  const [isHome, setIsHome] = useState(false);
+
+  useEffect(() => {
+    setIsHome(pathname === "/");
+  }, [pathname]);
+  
   return (
-    <div className="-top-20 z-10 relative bg-white mx-auto w-full">
-      <div className="top-20 relative place-content-center place-items-center bg-white mx-auto pt-60 pb-40 w-full h-full">
+    <div className={cn("z-10 relative bg-white mx-auto mt-10 w-full", isHome && "-top-20")}>
+      <div
+        className={cn(
+          " relative  place-content-center place-items-center bg-white mx-auto py-20 w-full h-full", isHome && "top-20 pt-60 pb-40"
+        )}
+      >
         <div className="grid grid-cols-6 w-full max-w-[1450px]">
           {FOOTER_DATA.map((section, index) => (
             <div key={index} className="flex flex-col gap-y-7">
