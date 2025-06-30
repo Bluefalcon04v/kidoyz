@@ -1,6 +1,7 @@
 import { CustomImage, ICardImage } from "./CardImage";
 import { Heading, IHeading } from "./Heading";
 import { Button, IButton } from "./Button";
+import { CloseSvg } from "@/../public/svg";
 import { IText, Text } from "./Text";
 import { cn } from "@/utils/cn";
 export function Card({
@@ -50,7 +51,16 @@ function CardText({ variant, children, ...props }: IText) {
   );
 }
 
+function CardCloseButton({ ...props }) {
+  return (
+    <button className="group top-8 right-4 absolute" {...props}>
+      <CloseSvg />
+    </button>
+  );
+}
+
 Card.Image = CardImage;
 Card.Title = CardTitle;
 Card.Button = CardButton;
 Card.Text = CardText;
+Card.CloseButton = CardCloseButton;

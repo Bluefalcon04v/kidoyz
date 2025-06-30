@@ -8,6 +8,7 @@
     margin: 0 auto;
     padding: 0 4rem;
   }
+
   /* -------------------------------- svg style ----------------------------------- */
   .svg-style {
     @apply fill-black hover:fill-primary hover:scale-110 transition-all ease-in-out cursor-pointer;
@@ -21,9 +22,13 @@
     @apply stroke-2 stroke-black group-hover:stroke-white transition-all ease-in-out;
   }
 
+  .close-icon-svg {
+    @apply fill-[#ABABAB] group-hover:fill-red-500 stroke-white active:scale-105 group-hover:scale-115 transition-all ease-in-out cursor-pointer;
+  }
+
   /* -------------------------------- Badge style ----------------------------------- */
   .badge-style {
-    @apply flex items-center gap-2 px-6 py-1 border-2 border-neutral rounded-md w-fit font-semibold text-gray text-lg;
+    @apply flex items-center gap-2 px-6 py-1 border-2 border-neutral rounded-md w-fit font-semibold text-gray text-sm;
   }
 
   .success-badge-style {

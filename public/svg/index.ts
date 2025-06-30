@@ -10,7 +10,7 @@ import RemoteCarsSvg from "./category/remote-cars.svg";
 import FacebookSvg from "./social-icons/facebook.svg";
 import MusicGameSvg from "./category/music-game.svg";
 import BoardGameSvg from "./category/board-game.svg";
-import ShippingTruckSvg from  "./shipping-truck.svg";
+import ShippingTruckSvg from "./shipping-truck.svg";
 import TwitterSvg from "./social-icons/twitter.svg";
 import YoutubeSvg from "./social-icons/youtube.svg";
 import StuffToySvg from "./category/stuff-toy.svg";
@@ -24,6 +24,7 @@ import DropdownSvg from "./dropdown.svg";
 import HeartIcon from "./nav/heart.svg";
 import RightSvg from "./right.svg";
 import OfferSvg from "./offer.svg";
+import CloseSvg from "./close.svg";
 import LeftSvg from "./left.svg";
 import TickSvg from "./tick.svg";
 
@@ -53,6 +54,7 @@ export {
   GunToySvg,
   RightSvg,
   OfferSvg,
+  CloseSvg,
   LeftSvg,
   TickSvg,
   PlaySvg,

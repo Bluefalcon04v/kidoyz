@@ -297,3 +297,72 @@ export const FOOTER_DATA = [
     ],
   },
 ];
+
+export const PRODUCTADDEDINCARTDATA = [
+  {
+    image: B2SImg1,
+    title: "Kids Cute Toddler Mini DIY Premium Backpack- RedColor",
+    sellingPrice: "999",
+    actualPrice: "2499",
+    percentageOff: "60",
+  },
+  {
+    image: B2SImg4,
+    title:
+      "Kids School Bag For 3-6 Years Old Boys and Girls - Dino Printed - Light Green",
+    sellingPrice: "1999",
+    actualPrice: "3899",
+    percentageOff: "20",
+  },
+  {
+    image: B2SImg3,
+    title:
+      "Kids School Bag For Years Old Boys and Girls - Dino Printed - Yellow Green",
+    sellingPrice: "499",
+    actualPrice: "899",
+    percentageOff: "70",
+  },
+];
+
+export const DEALOFDAYCARTDATA = [
+  {
+    image: B2SImg1,
+    title:
+      "Fishing Rotating Pond with 45 Pcs Fish, 4 Fishing Pole and Music Effect for Kids - Multicolor",
+    sellingPrice: "1699",
+    actualPrice: "2000",
+    percentageOff: "68",
+  },
+  {
+    image: B2SImg2,
+    title:
+      "Magnetic Writing & Drawing Board for Kids with Erasable Marker - Educational Toy",
+    sellingPrice: "799",
+    actualPrice: "1299",
+    percentageOff: "38",
+  },
+  {
+    image: B2SImg3,
+    title:
+      "Remote Control Stunt Car with 360° Rotation and LED Lights - Red & Black",
+    sellingPrice: "2199",
+    actualPrice: "3499",
+    percentageOff: "45",
+  },
+  {
+    image: B2SImg4,
+    title:
+      "DIY 3D Wooden Puzzle Kit – Mechanical Gears Model Building Set for Teens",
+    sellingPrice: "1499",
+    actualPrice: "1899",
+    percentageOff: "21",
+  },
+  {
+    image: B2SImg5,
+    title:
+      "LED Drawing Tablet for Kids with Stylus Pen - Rainbow Light Pad Art Toy",
+    sellingPrice: "999",
+    actualPrice: "1499",
+    percentageOff: "33",
+  },
+];

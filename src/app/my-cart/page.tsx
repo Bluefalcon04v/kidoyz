@@ -3,10 +3,11 @@ import DealOfDayCart from "./components/dealOfDayCart";
 import OrderSummary from "./components/orderSummary";
 import { Text } from "@/components/ui/Text";
 import React from "react";
+import BackToSchool from "../components/backToSchool";
 
 const MyCart = () => {
   return (
-    <div>
+    <div className="w-full">
       <Text variant="main" className="my-2 !font-jua" size="xl">
         My Cart
       </Text>
@@ -19,6 +20,7 @@ const MyCart = () => {
           <OrderSummary />
         </div>
       </div>
+      <BackToSchool />
     </div>
   );
 };
