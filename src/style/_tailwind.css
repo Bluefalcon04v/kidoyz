@@ -9,6 +9,18 @@
     padding: 0 4rem;
   }
 
+  @media (max-width: 1024px) {
+    .container {
+      max-width: 100% !important;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      padding: 0 1rem !important;
+    }
+  }
+
   /* -------------------------------- svg style ----------------------------------- */
   .svg-style {
     @apply fill-black hover:fill-primary hover:scale-110 transition-all ease-in-out cursor-pointer;

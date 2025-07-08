@@ -29,7 +29,7 @@ const Navbar = () => {
         <div className="flex items-center gap-5">
           <ProfileIcon />
           <HeartIcon />
-          <Link href={'./my-cart'}>
+          <Link href={"./my-cart"}>
             <ShoppingCartIcon />
           </Link>
         </div>

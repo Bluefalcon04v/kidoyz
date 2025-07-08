@@ -19,12 +19,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="relative w-full" >
+      <body className="relative w-full">
         <Navbar />
         <div className="container">{children}</div>
       </body>
-      <Footer/>
+      <Footer />
     </html>
   );
 }
-  

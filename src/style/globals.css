@@ -55,15 +55,10 @@ body::before {
 } */
 
 .text-outline-shadow {
-  text-shadow:
-    -3px -3px 0 var(--color-white),
-    0 -3px 0 var(--color-white),
-    3px -3px 0 var(--color-white),
-    -3px 0 0 var(--color-white),
-    3px 0 0 var(--color-white),
-    -3px 3px 0 var(--color-white),
-    0 3px 0 var(--color-white),
-    3px 3px 0 var(--color-white);
+  text-shadow: -3px -3px 0 var(--color-white), 0 -3px 0 var(--color-white),
+    3px -3px 0 var(--color-white), -3px 0 0 var(--color-white),
+    3px 0 0 var(--color-white), -3px 3px 0 var(--color-white),
+    0 3px 0 var(--color-white), 3px 3px 0 var(--color-white);
 }
 
 /* ------------------------ Bento Grid Styling ---------------------- */
