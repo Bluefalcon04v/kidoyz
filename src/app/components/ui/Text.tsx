@@ -20,12 +20,12 @@ const textVariants = cva("flex items-center-safe px-2 font-lato text-pretty", {
       disable: "text-gray",
     },
     size: {
-      default: "text-xl",
-      sm: "text-sm",
-      md: "text-base",
-      base: "text-lg",
-      lg: "text-2xl",
-      xl: "text-4xl",
+      default: "text-xl max-md:text-lg",
+      sm: "text-sm max-md:text-xs",
+      md: "text-base max-md:text-xs",
+      base: "text-lg max-md:text-base",
+      lg: "text-2xl max-md:text-base",
+      xl: "text-4xl max-md:text-xl",
     },
     fontSemibold: {
       true: "font-semibold",

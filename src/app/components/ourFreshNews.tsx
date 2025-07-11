@@ -34,7 +34,12 @@ const OurFreshNews = () => {
           </Link>
         )}
         data={OUR_FRESH_NEWS_DATA}
-        breakpoints={3}
+        breakpoints={{
+          320: { slidesPerView: 1, slidesPerGroup: 1 },
+          640: { slidesPerView: 2, slidesPerGroup: 2 },
+          1024: { slidesPerView: 3, slidesPerGroup: 3 },
+          1440: { slidesPerView: 3, slidesPerGroup: 3 },
+        }}
       />
     </div>
   );

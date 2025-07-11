@@ -15,19 +15,22 @@ interface IProps {
   data?: any;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   card?: any;
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  breakpoints?: any;
+  breakpoints?: {
+    [width: number]: {
+      slidesPerView: number;
+      slidesPerGroup?: number;
+    };
+  };
 }
 
 const Slider = ({
   card,
   data,
-  breakpoints,
+  breakpoints = {},
   showArrows = true,
   className,
 }: IProps) => {
   const swiperRef = useRef<SwiperClass | null>(null);
-
   const goNext = () => {
     if (swiperRef.current && swiperRef.current.slideNext) {
       if (swiperRef.current.isEnd) {
@@ -47,6 +50,7 @@ const Slider = ({
       }
     }
   };
+
   return (
     <div
       className={cn(
@@ -67,16 +71,16 @@ const Slider = ({
         onSwiper={(swiper) => (swiperRef.current = swiper)}
         modules={[Navigation, Pagination, Autoplay]}
         pagination={{ clickable: true }}
-        slidesPerGroup={breakpoints}
-        // breakpoints={breakpoints}
-        slidesPerView={breakpoints}
+        // slidesPerGroup={responsiveBreakpoints}
+        breakpoints={breakpoints}
+        // slidesPerView={responsiveBreakpoints}
         className="mySwiper"
         spaceBetween={40}
         allowTouchMove
         speed={800}
         loop
       >
-        {data.map((slide, index:number) => (
+        {data.map((slide, index: number) => (
           <SwiperSlide key={index}>
             <div>{card!(slide)}</div>
           </SwiperSlide>

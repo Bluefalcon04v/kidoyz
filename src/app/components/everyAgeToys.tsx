@@ -25,7 +25,7 @@ const EveryAgeToys = () => {
       <Heading image={BearHeadingImg} size="xl">
         Toys for Every Age: Sorted!
       </Heading>
-      <div className="gap-x-8 grid grid-cols-5 mt-8">
+      <div className="gap-8 max-md:gap-4 max-lg:gap-4 grid grid-cols-5 max-sm:grid-cols-3 max-md:grid-cols-4 mt-8">
         {AGECARDDATA.map((i, index) => (
           <AgeCard key={index} image={i.image} title={i.title} />
         ))}
@@ -51,8 +51,8 @@ const AgeCard = ({ image, title }: IAgeCard) => {
         width={300}
       />
       <div className="top-0 z-10 absolute items-center place-content-center place-items-center rounded-3xl w-full h-full">
-        <Image src={image} alt="age image" width={96} height={121} className="size-32 object-contain" />
-        <p className="text-shadow-2xs font-jua text-primary text-2xl">
+        <Image src={image} alt="age image" width={96} height={121} className="size-32 max-md:size-20 max-lg:size-24 object-contain" />
+        <p className="text-shadow-2xs font-jua text-primary max-md:text-lg max-lg:text-xl text-2xl">
           {title} Years
         </p>
       </div>

@@ -1,10 +1,11 @@
+import { useMediaQuery } from "@/hooks/useMediaQuery";
 import { cva } from "class-variance-authority";
 import { cn } from "@/utils/cn";
 import React from "react";
 
 export type IButton = React.HTMLAttributes<HTMLButtonElement> & {
-  variant?: "primary" | "secondary" | "disabled" ;
-  size?: "default" | "sm" | "lg";
+  variant?: "primary" | "secondary" | "disabled";
+  size?: "default" | "sm" | "md" | "lg";
 };
 
 const buttonVariants = cva(
@@ -21,6 +22,7 @@ const buttonVariants = cva(
         default: "px-8 py-2.5",
         sm: "px-2 py-1 text-sm",
         lg: "px-3 py-4 text-lg",
+        md: "px-2 py-2 text-base",
       },
     },
     defaultVariants: {
@@ -36,10 +38,16 @@ export const Button: React.FC<IButton> = ({
   size,
   ...props
 }) => {
+  const isMdScreen = useMediaQuery("(min-width: 768px)");
+
+  const responsiveSize = isMdScreen ? size : "md";
+
   return (
     <button
       {...props}
-      className={cn(buttonVariants({ variant, size, className }))}
+      className={cn(
+        buttonVariants({ variant, size: responsiveSize, className })
+      )}
     />
   );
 };

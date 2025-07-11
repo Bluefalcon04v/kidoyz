@@ -9,9 +9,17 @@
     padding: 0 4rem;
   }
 
+  @media (max-width: 1258px) {
+    .container {
+      max-width: 100% !important;
+      padding: 0 2rem !important;
+    }
+  }
+
   @media (max-width: 1024px) {
     .container {
       max-width: 100% !important;
+      padding: 0 1.5rem !important;
     }
   }
 

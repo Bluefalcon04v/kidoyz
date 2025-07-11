@@ -10,20 +10,38 @@ const BackToSchool = () => {
       <Heading variant="main" size="xl" image={RabbitHeadingImg}>
         Back to school sale !
       </Heading>
-      <div className="gap-16 grid grid-cols-3 mt-10 h-full">
+      <div className="gap-16 max-md:gap-8 grid grid-cols-3 max-lg:grid-cols-2 mt-10 h-full">
         {BACK_TO_SCHOOL_DATA.map((item, index) => (
-          <Card key={index} className="flex flex-col justify-between gap-2 hover:bg-primary/20 hover:shadow-xl rounded-t-full w-full h-full">
+          <Card
+            key={index}
+            className="flex flex-col justify-between gap-2 hover:bg-primary/20 hover:shadow-xl rounded-t-full w-full h-full"
+          >
             <Card.Image
               className="object-cover"
               variant="top-rounded"
               src={item.image}
               alt="image"
             ></Card.Image>
-            <Card.Text className="justify-start h-full !font-dm-sans font-medium text-black text-center" tracking="md"  size="md">{item.title}</Card.Text>
-            <Card.Text alignment="center" className="mb-2" variant="secondary" size="md">
+            <Card.Text
+              className="justify-start h-full !font-dm-sans font-medium text-black text-center"
+              tracking="md"
+              size="md"
+            >
+              {item.title}
+            </Card.Text>
+            <Card.Text
+              alignment="center"
+              className="mb-2"
+              variant="secondary"
+              size="md"
+            >
               Rs. {item.price}
             </Card.Text>
-            <Card.Button size="lg" variant="primary" className="w-full !font-medium uppercase">
+            <Card.Button
+              size="lg"
+              variant="primary"
+              className="w-full !font-medium uppercase"
+            >
               add to cart
             </Card.Button>
           </Card>

@@ -12,12 +12,21 @@ const PopularHighlights = () => {
         <Slider
           className="z-10 absolute px-16 h-full"
           card={(item: { image: string; link: string }) => (
-            <Link href={item.link} >
-              <CustomImage src={item.image} alt={`Highlight image`} className="mb-10" />
+            <Link href={item.link}>
+              <CustomImage
+                src={item.image}
+                alt={`Highlight image`}
+                className="mb-10"
+              />
             </Link>
           )}
           data={POPULAR_HIGHLIGHTS_DATA}
-          breakpoints={2}
+          breakpoints={{
+            320: { slidesPerView: 1, slidesPerGroup: 1 },
+            640: { slidesPerView: 1, slidesPerGroup: 1 },
+            1024: { slidesPerView: 2, slidesPerGroup: 2 },
+            1440: { slidesPerView: 2, slidesPerGroup: 2 },
+          }}
         />
       </div>
     </div>

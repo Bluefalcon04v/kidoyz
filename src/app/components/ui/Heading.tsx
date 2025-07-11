@@ -8,19 +8,19 @@ export type IHeading = React.HTMLAttributes<HTMLHeadingElement> & {
   size?: "default" | "sm" | "base" | "lg" | "xl";
 };
 
-const headingVariants = cva("tracking-wider", {
+const headingVariants = cva("text-pretty tracking-wider", {
   variants: {
     variant: {
-      main: " text-outline-shadow font-jua font-bold text-highlight ",
+      main: "text-outline-shadow font-jua font-bold text-highlight ",
       secondary: "text-secondary font-semibold font-jua",
       default: "text-dark-gray font-jua font-semibold",
     },
     size: {
-      default: "text-xl",
-      sm: "text-md",
-      base: "text-xl",
-      lg: "text-2xl",
-      xl: "text-4xl",
+      default: "text-xl max-md:text-lg max-lg:text-lg",
+      sm: "text-md  max-md:text-sm",
+      base: "text-xl max-lg:text-lg max-md:text-lg",
+      lg: "text-2xl max-lg:text-xl max-md:text-xl",
+      xl: "text-4xl max-lg:text-3xl max-md:text-2xl",
     },
   },
   defaultVariants: {
@@ -44,7 +44,7 @@ export const Heading: React.FC<IHeading> = ({
           alt={`default ${image}`}
           width={300}
           height={200}
-          className="mr-2 h-fit size-28 object-contain aspect-auto"
+          className="mr-2 h-fit size-28 max-md:size-16 max-lg:size-20 object-contain aspect-auto"
         />
       )}
       <h1

@@ -10,7 +10,9 @@ const HomeSlider = () => {
     <div className="my-4">
       <Slider
         data={sliderData}
-        breakpoints={1}
+        breakpoints={{
+          1440: { slidesPerView: 1, slidesPerGroup: 1 },
+        }}
         card={(imageSrc: string) => (
           <div className="w-full h-[25vw] max-lg:h-[40vw]">
             <Image
