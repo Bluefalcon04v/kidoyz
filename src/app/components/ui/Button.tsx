@@ -1,3 +1,4 @@
+"use client";
 import { useMediaQuery } from "@/hooks/useMediaQuery";
 import { cva } from "class-variance-authority";
 import { cn } from "@/utils/cn";
