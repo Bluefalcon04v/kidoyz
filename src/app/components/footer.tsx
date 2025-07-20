@@ -24,12 +24,18 @@ const Footer = () => {
   useEffect(() => {
     setIsHome(pathname === "/");
   }, [pathname]);
-  
+
   return (
-    <div className={cn("z-10 relative bg-white mx-auto mt-10 w-full", isHome && "-top-20")}>
+    <div
+      className={cn(
+        "z-10 relative bg-white mx-auto mt-10 w-full",
+        isHome && "-top-20"
+      )}
+    >
       <div
         className={cn(
-          " relative  place-content-center place-items-center bg-white mx-auto py-20 w-full h-full", isHome && "top-20 pt-60 pb-40"
+          " relative  place-content-center place-items-center bg-white mx-auto py-20 w-full h-full",
+          isHome && "top-20 pt-60 pb-40"
         )}
       >
         <div className="grid grid-cols-6 w-full max-w-[1450px]">
